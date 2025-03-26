@@ -1,0 +1,280 @@
+{% load static %}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+      
+    <main>
+        <div class="bg wrap"></div>
+        <div class="auth-wrap wrap">
+            <div class="auth">
+                <h1>Get Started Now</h1>
+                
+
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    
+                    <button type="submit" style="background-color: blue;">Signup</button>
+                </form>
+
+                <div class="sign-in-wrap">
+                    <div class="sign-in-with">
+                        <div class="google">
+                            <img src="{% static 'images/google-color-svgrepo-com.svg' %}" alt="Google Icon">
+                            <p>Sign in with Google</p>
+                        </div>
+                        <div class="google">
+                            <img src="{% static 'images/apple-svgrepo-com.svg' %}" alt="Apple Icon">
+                            <p>Sign in with Apple</p>
+                        </div>
+                    </div>
+                    <p class="have-acct">
+                        Have an account? <span><a href="{% url 'user_login' %}">Sign In</a></span>
+                    </p>
+                    <p class="have-acct">get home! <span><a href="{% url 'home' %}">home</a></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        @import url(../general-styles.css);
+
+        main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .wrap {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bg {
+            background-image: url('/static/images/7612357.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .auth {
+            width: 65%;
+            height: 80%;
+            color: var(--primary-color);
+        }
+
+        .auth h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+        .auth p {
+            font-weight: 400;
+        }
+
+        form {
+            margin-top: 60px;
+        }
+
+        form h2 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .input {
+            width: 100%;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.575);
+            margin-bottom: 30px;
+            margin-top: 3px;
+            padding: 0 10px;
+        }
+
+        .input::placeholder {
+            opacity: 0.4;
+            font-weight: 400;
+        }
+
+        .check {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .check label {
+            font-size: 0.8rem;
+        }
+
+        form button {
+            width: 100%;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .sign-in-with {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .google {
+            width: 48%;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.575);
+            margin: 30px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            padding: 0 8px;
+            cursor: pointer;
+        }
+
+        .have-acct {
+            text-align: center;
+        }
+
+        .have-acct a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 900px) {
+            .wrap {
+                width: 100%;
+            }
+
+            .bg {
+                opacity: 0.3;
+                filter: blur(1rem);
+            }
+
+            .auth-wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            .auth {
+                width: 75%;
+            }
+
+            .google img {
+                width: 20px;
+            }
+
+            .google p {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .auth h1 {
+                font-size: 2rem;
+            }
+
+            .auth p {
+                font-size: 0.9rem;
+            }
+
+            .google p {
+                font-size: 0.7rem;
+            }
+
+            .google {
+                gap: 10px;
+            }
+        }
+        .linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  
+}
+.linkWrapper li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+    </style>
+</body>
+<script>
+    "use strict";
+
+const overlay = document.querySelector(".overlay");
+const showDropdown = document.querySelector(".show");
+const hideDropdown = document.querySelector(".hide");
+const dropdown = document.querySelector(".dropdown");
+const logo = document.querySelector(".logo");
+// const signInBtn = document.querySelector("#signLink");
+// const signIcon = document.querySelector(".hero-sign");
+
+showDropdown.addEventListener("click", () => {
+  overlay.style.display = "block";
+  showDropdown.style.display = "none";
+  hideDropdown.style.display = "inline-block";
+  dropdown.style.marginLeft = "0";
+  logo.classList.add("pop");
+});
+hideDropdown.addEventListener("click", () => {
+  overlay.style.display = "none";
+  showDropdown.style.display = "inline-block";
+  hideDropdown.style.display = "none";
+  dropdown.style.marginLeft = "-60%";
+  logo.classList.remove("pop");
+});
+
+// signInBtn.addEventListener("mouseenter", () => {
+//   signIcon.style.display = "inline";
+// });
+// signInBtn.addEventListener("mouseleave", () => {
+//   signIcon.style.display = "block";
+// });
+
+</script>
+</html>
+{% endblock content%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

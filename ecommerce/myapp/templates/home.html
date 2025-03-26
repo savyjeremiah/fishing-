@@ -1,0 +1,1547 @@
+
+
+{% load static %}
+{% block content%}
+{% include 'nav.html'%}
+
+  <body>
+
+    
+
+    <!-- -- HERO SECTION --- -->
+    <!-- -- HERO SECTION --- -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1>
+          Sustainably Raised, Expertly Farmed: Your Source for Quality Catfish.
+        </h1>
+        <p>Your Trusted Partner in Catfish Farming and Consultancy.</p>
+        <div class="hero-cta">
+          
+          <a href="{% url 'product' %}" id="getStarted">Get Started</a>
+          <a href="{% url 'about' %}" id="learnBtn">Learn More</a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Second Section -- -->
+    <!-- -- Second Section -- -->
+    <section class="section-two">
+      <div class="container-two">
+        <div class="text-content">
+          <h2>
+            Feeding Dreams, One Catfish at a Time – The Hatchgains Promise."
+          </h2>
+          <p>Bringing Freshness and Expertise to Every Pond and Plate</p>
+           <a href="{% url 'product' %}" id="getStarted">Get Started</a>
+         
+        </div>
+        <div class="image-content">
+          <img
+          
+            src="{% static 'images/new.jpg'%}"
+            alt="A lovely looking catfish"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Third Section ---->
+    <!-- -- Third Section ---->
+
+    <section class="section-three">
+      <div class="container-three">
+        <h2>Our Services</h2>
+        <p class="oven">
+          Oven-Dried, Live, or Fingerlings – We’ve Got Your Catfish Needs
+          Covered.
+        </p>
+        <div class="cards">
+          <div class="card-content">
+            <img src="{% static 'images/nv.svg' %}" 
+          >Supply of fingerlings</p>
+          </div>
+          <div class="card-content">
+            
+            {% load static %}
+            <img src="{% static 'images/fish.svg' %}" alt="Favicon">
+            
+
+            <p>Catfish farming</p>
+          </div>
+          <div class="card-content">
+            <img src="{% static 'images/oven-baker-line-svgrepo-com.svg'%}" alt="" />
+            <p>Oven dried catfish</p>
+          </div>
+          <div class="card-content">
+            <img
+              src="{% static 'images/consultant-consult-business-consultant-document-review-svgrepo-com.svg'%}"
+              alt=""
+            />
+            <p>Fish farming consultancy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fourth Section -->
+    <!-- fourth Section -->
+    <section id="fourth-section" class="section-three">
+      <div class="container-three">
+        <h2>Our Featured Products</h2>
+        <p class="oven">
+          Discover the Future of Catfish Farming with Hatchgains. Oven-Dried,
+          Live, or Fingerlings – We’ve Got Your Catfish Needs Covered.
+        </p>
+        <div class="product-cards">
+          <div class="product-content">
+            <div class="pix-wrap">
+              <img src="{% static 'images/fingerlings.jpeg'%}" alt="" />
+            </div>
+            <div class="text-wrap">
+              <p>Fingerlings</p>
+              <p class="text">
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="pix-wrap">
+              <img src="{% static 'images/livecatfishes.png'%}" alt="" />
+            </div>
+            <div class="text-wrap">
+              <p>Live Catfish</p>
+              <p class="text">
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="pix-wrap">
+              <img src="{% static 'images/smoked catfishes.jpg'%}" alt="" />
+            </div>
+            <div class="text-wrap">
+              <p>Smoked catfish</p>
+              <p class="text">
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+          <div class="product-content">
+            <div class="pix-wrap">
+              <img src="{% static 'images/afri.png'%}" alt="" />
+            </div>
+            <div class="text-wrap">
+              <p>Local Fish meal</p>
+              <p class="text">
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="{% url 'product' %}"> <p class="see">See all Products</p></a>
+      </div>
+    </section>
+
+    <!-- fifth section -->
+    <!-- fifth section -->
+    <section class="fifth-section">
+      <div class="fifth-container">
+        <h2>Discover the Future of Catfish Farming with Hatchgains</h2>
+        <div class="hero-cta">
+          <a href="{% url 'about' %}" id="getStarted">Learn More</a>
+          <button id="learnBtn">Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- sixth section -->
+    <!-- sixth section -->
+    <section class="expertise-section">
+      <div class="expertise-container">
+        <div class="expertise-text">
+          <h2>The Benefits of Choosing Our Expertise</h2>
+          <p>
+            Li Europan lingues es membres del sam familie. Lor separat
+            existentie es un myth. Por scientie, musica, sport etc, litot Europa
+            usa li sam vocabular.
+          </p>
+          <a href="{% url 'about' %}"
+            >Learn more <span><img src="{% static 'images/arrow.svg'%}" alt="" /></span
+          ></a>
+        </div>
+        <div class="expertise-icons">
+          <div class="icon-wrap">
+            <div class="icon-image">
+              <img src="{% static 'images/star_rate.svg'%}" alt="" />
+            </div>
+            <div class="icon-text">
+              <h3>15+</h3>
+              <p>Years of experience</p>
+            </div>
+          </div>
+          <div class="icon-wrap">
+            <div class="icon-image">
+              <img src="{% static 'images/Vector product.svg'%}" alt="" />
+            </div>
+            <div class="icon-text">
+              <h3>40+</h3>
+              <p>Products</p>
+            </div>
+          </div>
+          <div class="icon-wrap">
+            <div class="icon-image">
+              <img src="{% static 'images/check.svg' %}" alt="" />
+            </div>
+            <div class="icon-text">
+              <h3>2,458+</h3>
+              <p>Satisfied clients</p>
+            </div>
+          </div>
+          <div class="icon-wrap">
+            <div class="icon-image">
+              <img src="{% static 'images/users icon.svg'%}" alt="" />
+            </div>
+            <div class="icon-text">
+              <h3>20</h3>
+              <p>Local Team Members</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seventh Section -->
+    <!-- Seventh Section -->
+    <section id="seventh-section" class="section-three">
+      <div class="container-three" id="seventh-container">
+        <h2>Testimonials</h2>
+        <p class="oven">
+          Discover the Future of Catfish Farming with Hatchgains. Oven-Dried,
+          Live, or Fingerlings – We’ve Got Your Catfish Needs Covered.
+        </p>
+
+        <!-- Testimonial -->
+        <div class="testimonial">
+          <div class="arrow">
+            <img src="{% static 'images/testimonial arrow left.svg' %}" alt="" />
+          </div>
+          <div class="test-wrapper">
+            <div class="test-image">
+              <img src="{% static 'images/Opeyemi.jpg' %}" alt="" />
+            </div>
+            <div class="test-text">
+              <div class="star-wrapper">
+                <img src="  {% static 'images/gold star.svg' %}" alt="" />
+                <img src="  {% static 'images/gold star.svg' %}" alt="" />
+                <img src="  {% static 'images/gold star.svg' %}" alt="" />
+                <img src="  {% static 'images/gold star.svg' %}" alt="" />
+                <img src="  {% static 'images/gold star.svg' %}" alt="" />
+                
+              </div>
+              <h3>Opeyemi Akinwumi</h3>
+              <p class="test-title">Frontend Developer</p>
+              <p class="descc">
+              
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                minima vitae id cupiditate, quisquam quos natus incidunt, itaque
+                similique nostrum fugiat illum, accusamus quod voluptate?
+              </p>
+            </div>
+          </div>
+          <div class="arrow">
+            <img src="{% static 'images/testimonial arrow right.svg' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="foot-title">
+          <h3>Hatchgains Farms</h3>
+          <p>
+            Li Europan lingues es membres del sam familie. Lor separat
+            existentie
+          </p>
+          <div class="footer-links">
+                <img src="  {% static 'images/gold star.svg' %}" alt="" />
+                <a href="#">
+                  <img src="  {% static 'images/facebook.svg' %}" alt="" />
+              
+            </a>
+            <a href="#">
+              <img class="ig" src="{% static 'images/instagram-167-svgrepo-com.svg' %}" alt="" />
+            </a>
+            <a href="#">
+              <img class="tweet" src="{% static 'images/twitter-3-svgrepo-com.svg' %}" alt="" />
+            </a>
+        
+          </div>
+        </div>
+        <div class="foot-pages">
+          <div class="foots">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'product' %}">Product</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+              
+              
+            </ul>
+          </div>
+          <div class="foots">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Our Service</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Benefits</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="script.js">
+      
+    </script>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #204e51;
+  --secondary-color: #f9c301;
+  --bg-color: #d9d9d9;
+  --shadow: 1px 1px 5px 3px rgb(211, 207, 207);
+  --border: 5px solid var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p,
+a,
+label {
+  font-family: "Raleway", sans-serif;
+}
+button,
+input::placeholder,
+textarea::placeholder,
+input,
+textarea {
+  font-family: "Raleway", sans-serif;
+}
+
+.body {
+  position: relative;
+  /* background-color: var(--bg-color); */
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.navContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.menu {
+  width: auto;
+  /* background-color: red; */
+  height: 30px;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+}
+.icon {
+  cursor: pointer;
+}
+.logo {
+  height: 65px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 999;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.linkWrapper li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cta button {
+  width: 120px;
+  height: 45px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #163133;
+}
+
+#signBtn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid var(--primary-color);
+}
+#signBtn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+.overlay {
+  display: none;
+  transition: 2s all ease-in-out;
+}
+.dropdown {
+  display: none;
+  transition: 1s all ease-in-out;
+}
+.overlay {
+  transition: 5s all ease-in-out;
+}
+
+@media screen and (max-width: 860px) {
+  .navContainer {
+    width: 90%;
+  }
+  .linkWrapper {
+    display: none;
+  }
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .overlay {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.505);
+    /* filter: blur(2rem); */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    box-shadow: 1px 1px 5px 2px rgba(137, 137, 137, 0.121);
+    margin-left: -60%;
+  }
+  .dropdown li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+  }
+
+  .dropdown li a {
+    width: 110px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #204e51;
+    /* background-color: red; */
+    font-family: "Raleway", sans-serif;
+  }
+  .hero-icon svg {
+    width: 24px;
+  }
+  #navLink:hover {
+    background-color: #204e512b;
+  }
+  #navlink a:hover {
+    color: white;
+  }
+  #signLink {
+    /* font-size: 0.8rem;
+      font-weight: 600; */
+    /* width: 130px; */
+    gap: 10px;
+    background-color: #204e51;
+    color: white;
+    justify-content: center;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    transition: 3px all ease-in-out;
+  }
+  #signLink:hover {
+    background-color: #204e512b;
+  }
+  .hero-sign {
+    display: none;
+  }
+}
+
+.pop {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation-name: pop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  /* 100% {
+      transform: scale(1.2);
+    } */
+}
+
+/* Footer */
+/* Footer */
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+.footer-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot-title {
+  width: 60%;
+}
+.foot-title h3 {
+  font-size: 2rem;
+}
+.foot-title p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  padding: 10px 0 20px 0;
+  max-width: 70%;
+}
+
+.footer-links {
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.footer-links a {
+  border: none;
+}
+.fb {
+  width: 40px;
+}
+.ig {
+  width: 22px;
+}
+.tweet {
+  width: 30px;
+}
+
+.foot-pages {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+.foots h4 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.foots ul {
+  list-style: none;
+}
+.foots ul li {
+  height: 40px;
+}
+.foots a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    height: auto;
+    padding: 50px 0;
+  }
+  .footer-container {
+    display: block;
+  }
+  .foot-title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .foot-pages {
+    width: 100%;
+  }
+}
+@import url(general-styles.css);
+
+
+
+/* <--- HERO SECTION ---> */
+.hero-section {
+  width: 100%;
+  height: 89vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.596),
+      rgba(0, 0, 0, 0.819)
+    ),
+    url('/static/images/india-929719_1920.jpg');
+    
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container h1 {
+  font-size: 4rem;
+  max-width: 80%;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.hero-container p {
+  margin: 30px 0;
+}
+
+.hero-cta {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-cta button {
+  background-color: var(--primary-color);
+  color: white;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.hero-cta button:hover {
+  background-color: #163133;
+}
+#learnBtn {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.744);
+}
+#learnBtn:hover {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+@media screen and (max-width: 1020px) {
+  .hero-container {
+    width: 90%;
+  }
+  .hero-container h1 {
+    max-width: 90%;
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+  .hero-container p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-container {
+    width: 95%;
+  }
+  .hero-container h1 {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-container h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/* <--- SECTION TWO ---> */
+.section-two {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-two {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-content {
+  width: 45%;
+  height: 540px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-content {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.text-content h2 {
+  font-size: 3.5rem;
+  color: #204e51;
+  line-height: 60px;
+}
+.text-content p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.text-content button {
+  width: 120px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.text-content button:hover {
+  background-color: #163133;
+}
+
+@media screen and (max-width: 950px) {
+  .section-two {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .container-two {
+    display: block;
+  }
+  .text-content {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-content h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .text-content p {
+    margin: 20px 0;
+  }
+
+  .image-content {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-two {
+    width: 92%;
+  }
+  .text-content h2 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+}
+
+/* Third Section */
+/* Third Section */
+
+.section-three {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: var(--bg-color);
+}
+.container-three {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.container-three h2 {
+  font-size: 2.2rem;
+  color: #204e51;
+  text-align: center;
+}
+.container-three .oven {
+  max-width: 500px;
+  font-size: 0.8rem;
+  /* line-height: 20px; */
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px;
+  /* background-color: green; */
+  gap: 50px;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+}
+.card-content img {
+  width: 80px;
+}
+
+.card-content p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #204e51;
+}
+
+@media screen and (max-width: 950px) {
+  .section-three {
+    height: auto;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  .card-content img {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-three {
+    height: auto;
+  }
+  .container-three {
+    width: 92%;
+  }
+
+  .cards {
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 150px 150px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .card-content img {
+    width: 50px;
+  }
+  .card-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    row-gap: 8px;
+  }
+}
+
+/* Fourth Section */
+/* Fourth Section */
+
+#fourth-section {
+  height: 700px;
+  padding-bottom: 60px;
+}
+
+.product-cards {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  gap: 50px;
+}
+
+.product-content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 20px; */
+  /* padding: 45px; */
+  padding: 40px 20px 30px 20px;
+}
+.pix-wrap {
+  width: 80%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.product-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-content p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--primary-color);
+}
+.text-wrap {
+  margin-top: 10px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-content .text {
+  /* max-width: 80%; */
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container-three a {
+  color: var(--primary-color);
+  margin-top: 40px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-cards {
+    padding-bottom: 0;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #fourth-section {
+    height: auto;
+  }
+  .product-cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+  }
+
+  .product-content {
+    padding: 20px;
+  }
+  .pix-wrap {
+    width: 100%;
+  }
+  .product-content .text {
+    /* max-width: 80%; */
+
+    font-size: 0.7rem;
+
+    line-height: 20px;
+  }
+}
+
+/* fifth section */
+/* fifth section */
+
+.fifth-section {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('/static/images/afri.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifth-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+.fifth-container h2 {
+  max-width: 700px;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .fifth-container h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .fifth-container {
+    width: 92%;
+  }
+  .fifth-container h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* sixth section */
+/* sixth section */
+
+.expertise-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 60px 0; */
+  padding: 40px 0;
+  background-color: var(--bg-color);
+}
+
+.expertise-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expertise-text {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.expertise-text h2 {
+  color: var(--primary-color);
+  font-size: 4rem;
+}
+.expertise-text p {
+  max-width: 70%;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+.expertise-text a {
+  width: 180px;
+  height: 45px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.expertise-text a:hover {
+  background-color: #163133;
+}
+
+.expertise-icons {
+  width: 50%;
+  height: 700px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-wrap {
+  width: 60%;
+  height: 125px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.icon-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-image img {
+  width: 60%;
+}
+
+.icon-text h3 {
+  font-size: 3rem;
+}
+.icon-text p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .expertise-section {
+    height: auto;
+  }
+  .expertise-container {
+    display: block;
+  }
+  .expertise-text {
+    height: auto;
+    padding: 30px 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .expertise-icons {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    gap: 30px;
+    padding: 30px 30px;
+  }
+  .icon-wrap {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .expertise-text h2 {
+    font-size: 3rem;
+  }
+  .expertise-text a {
+    margin-top: 15px;
+  }
+  .expertise-icons {
+    gap: 20px;
+    grid-template-rows: 100px 100px;
+  }
+
+  .icon-text h3 {
+    font-size: 3rem;
+  }
+  .icon-text p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .expertise-icons {
+    row-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+  }
+  .icon-wrap {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .expertise-icons {
+    padding: 30px 10px;
+    row-gap: 30px;
+  }
+  .icon-image {
+    width: 70px;
+    height: 70px;
+  }
+  .icon-image img {
+    width: 60%;
+  }
+  .icon-wrap {
+    width: 80%;
+  }
+  .icon-text h3 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .expertise-container {
+    width: 92%;
+  }
+  .expertise-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .expertise-text a {
+    width: 150px;
+  }
+}
+
+/* Seventh Section */
+/* Seventh Section */
+#seventh-section {
+  height: auto;
+  padding: 70px 0;
+  /* background-color: red; */
+}
+
+.testimonial {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: green; */
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+.arrow img {
+  width: 15px;
+}
+
+.test-wrapper {
+  width: 80%;
+  height: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.test-image {
+  width: 25%;
+  height: 250px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.test-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.test-text {
+  width: 45%;
+  height: auto;
+}
+
+.star-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 15px; */
+}
+.star-wrapper img {
+  width: 30px;
+}
+
+.test-text h3 {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.test-title {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.descc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 15px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 850px) {
+  .descc {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .testimonial {
+    height: auto;
+  }
+  .test-wrapper {
+    width: 75%;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+  }
+  .test-image {
+    width: 60%;
+    height: 250px;
+  }
+  .test-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .test-text p,
+  .test-text h3 {
+    text-align: center;
+  }
+  .test-text h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .test-image {
+    height: 200px;
+  }
+
+  .descc {
+    font-size: 0.7rem;
+  }
+}
+
+/* Button Styles */
+
+/* Get Started Button */
+a#getStarted {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    margin: 1px;
+}
+
+a#getStarted:hover {
+    background-color: #0056b3;
+}
+
+/* Learn More Button */
+a#learnBtn {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    margin: 1px;
+}
+
+a#learnBtn:hover {
+    background-color: #1e7e34;
+}
+
+
+    </style>
+  </body>
+  <script>
+    "use strict";
+
+const overlay = document.querySelector(".overlay");
+const showDropdown = document.querySelector(".show");
+const hideDropdown = document.querySelector(".hide");
+const dropdown = document.querySelector(".dropdown");
+const logo = document.querySelector(".logo");
+// const signInBtn = document.querySelector("#signLink");
+// const signIcon = document.querySelector(".hero-sign");
+
+showDropdown.addEventListener("click", () => {
+  overlay.style.display = "block";
+  showDropdown.style.display = "none";
+  hideDropdown.style.display = "inline-block";
+  dropdown.style.marginLeft = "0";
+  logo.classList.add("pop");
+});
+hideDropdown.addEventListener("click", () => {
+  overlay.style.display = "none";
+  showDropdown.style.display = "inline-block";
+  hideDropdown.style.display = "none";
+  dropdown.style.marginLeft = "-60%";
+  logo.classList.remove("pop");
+});
+
+// signInBtn.addEventListener("mouseenter", () => {
+//   signIcon.style.display = "inline";
+// });
+// signInBtn.addEventListener("mouseleave", () => {
+//   signIcon.style.display = "block";
+// });
+
+  </script>
+</html>
+{% endblock content %}

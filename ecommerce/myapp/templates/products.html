@@ -1,0 +1,756 @@
+
+ {% load static %}
+
+ {% include 'nav.html'%}
+
+
+    <main>
+      <div class="main-container">
+        <h1>Products</h1>
+      </div>
+    </main>
+    
+    
+
+        <!-- <div class="tag-container">
+          <h2>Fingerlings</h2>
+          <p>Minimum Order: <span class="gram">30grams</span></p>
+        </div>
+      </div> -->
+
+      <section>
+      
+        <div class="tag">
+          <div class="tag-container">
+            <h2>Fingerlings</h2>
+            <p>Minimum Order: <span class="gram">30grams</span></p>
+          </div>
+        </div> 
+        </div>
+        <div class="products-wrap">
+          {% for product in ice_fish %}
+   
+          <div class="wrap-wrap">
+            <div class="pix"><img src="{{ product.image.url }}" alt="{{ product.name }}"></div>
+            <h3>{{ product.name }}</h3>
+            <h3 class="price">₦{{ product.price }} 
+            </h3>
+            <div class="buy-btn-container">
+              <a href="{% url 'add_to_cart' product.id %}" class="buy-btn">Buy</a>
+          </div>
+          
+
+            <div class="cart" >
+              <div class="order">
+                <img
+                  src="../images/minus-svgrepo-com.svg"
+                  class="decrease"
+                  alt=""
+                />
+              </div>
+              <p>Weight: <span class="gram">{{ product.grams }} </span></p> <br>
+
+              
+              <div class="order">
+               
+                <img
+                  src="../images/plus-svgrepo-com.svg"
+                  class="decrease"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          
+         
+       
+        </div>
+      </section>
+   
+    <!-- Live catfishes -->
+    
+    <section>
+      
+      <div class="tag">
+        <div class="tag-container">
+          <h2>Live Catfishes</h2>
+          <p>Minimum Order: <span class="gram">30grams</span></p>
+        </div>
+      </div>
+      <div class="products-wrap">
+        {% for product in finger_fish %}
+        <div class="wrap-wrap">
+          <div class="pix"><img src="{{ product.image.url }}" alt="{{ product.name }}"></div>
+          <h3>{{ product.name }}</h3>
+          
+          <h3 class="price">₦{{ product.price }}</h3>
+          <div class="buy-btn-container">
+            <a href="{% url 'add_to_cart' product.id %}" class="buy-btn">Buy</a>
+        </div>
+        
+
+          <p>Weight: <span class="gram">{{ product.grams }} </span></p> <br>
+
+          <div class="cart">
+            <div class="order">
+              <img
+                src="../images/minus-svgrepo-com.svg"
+                class="decrease"
+                alt=""
+              />
+            </div>
+        
+            <div class="order">
+              <img
+                src="../images/plus-svgrepo-com.svg"
+                class="decrease"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        
+       
+     
+      </div>
+    </section>
+
+
+    <!-- Smoked Catfish -->
+    <section>
+        
+      <div class="tag">
+        <div class="tag-container">
+          <h2>Smoked Catfish</h2>
+          <p>Minimum Order: <span class="gram">5grams</span></p>
+        </div>
+      </div>
+      <div class="products-wrap">
+        {% for product in smoked_fish %}
+
+        <div class="wrap-wrap">
+          <div class="pix"><img src="{{ product.image.url }}" alt="{{ product.name }}"></div>
+          <h3>{{ product.name }}</h3>
+          
+          <h3 class="price" >₦{{ product.price }}</h3>
+          <div class="buy-btn-container">
+            <a href="{% url 'add_to_cart' product.id %}" class="buy-btn">Buy</a>
+        </div>
+        
+
+          <p>Weight: <span class="gram">{{ product.grams }} </span></p> <br>
+
+          <div class="cart">
+            <div class="order">
+              <img
+                src="../images/minus-svgrepo-com.svg"
+                class="decrease"
+                alt=""
+              />
+            </div>
+          
+            <div class="order">
+              <img
+                src="../images/plus-svgrepo-com.svg"
+                class="decrease"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="foot-title">
+          <h3>Hatchgains Farms</h3>
+          <p>
+            Li Europan lingues es membres del sam familie. Lor separat
+            existentie
+          </p>
+          <div class="footer-links">
+            <a href="#">
+              <img class="fb" src="{% static 'images/twitter-3-svgrepo-com.svg' %}" alt="" />
+            </a>
+            
+          
+            <a href="#">
+              <img
+                class="tweet"
+                src="{% static 'images/instagram-167-svgrepo-com.svg' %}"
+                alt=""
+              />
+            </a>
+            <a href="#">
+                <img class="tweet" src="{% static 'images/gold star.svg' %}" alt="" />
+              </a>
+          </div>
+        </div>
+        <div class="foot-pages">
+          <div class="foots">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="foots">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Our Service</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Benefits</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
+
+    <!-- Interaction -->
+    <!-- Interaction -->
+    <script src="../script.js"></script>
+  </body>
+  <style>
+    @import url(../general-styles.css);
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  width: 80%;
+  /* height: 100%; */
+}
+.main-container h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  text-align: center;
+}
+section {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: var(--bg-color);
+}
+.tag {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tag-container h2 {
+  font-size: 1.5rem;
+}
+.gram {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.products-wrap {
+  width: 80%;
+  /* height: 400px; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 480px;
+  padding: 60px 0;
+  gap: 80px;
+}
+.wrap-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-color);
+}
+.pix {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.pix img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrap-wrap h3 {
+  margin: 20px 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.price {
+  padding: 5px 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 15px;
+  font-size: 1.4rem;
+}
+
+.cart {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.cart h4 {
+  font-size: 1.2rem;
+}
+.order {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  .products-wrap {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+    .products-wrap {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 480px 480px ;
+        column-gap: 70px;
+        row-gap: 35px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .products-wrap {
+
+        column-gap: 25px;
+        row-gap: 35px;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    .products-wrap {
+        grid-template-columns: 300px ;
+        grid-template-rows: 380px 380px 380px;
+        column-gap: 70px;
+        row-gap: 35px;
+        width: 92%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .tag-container {
+        width: 92%;
+    }
+    .pix {
+        height: 350px;
+    }
+    .wrap-wrap h3 {
+        margin: 10px 0;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #204e51;
+  --secondary-color: #f9c301;
+  --bg-color: #d9d9d9;
+  --shadow: 1px 1px 5px 3px rgb(211, 207, 207);
+  --border: 5px solid var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p,
+a,
+label {
+  font-family: "Raleway", sans-serif;
+}
+button,
+input::placeholder,
+textarea::placeholder,
+input,
+textarea {
+  font-family: "Raleway", sans-serif;
+}
+
+.body {
+  position: relative;
+  /* background-color: var(--bg-color); */
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.navContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.menu {
+  width: auto;
+  /* background-color: red; */
+  height: 30px;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+}
+.icon {
+  cursor: pointer;
+}
+.logo {
+  height: 65px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 999;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.linkWrapper li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cta button {
+  width: 120px;
+  height: 45px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #163133;
+}
+
+#signBtn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid var(--primary-color);
+}
+#signBtn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+.overlay {
+  display: none;
+  transition: 2s all ease-in-out;
+}
+.dropdown {
+  display: none;
+  transition: 1s all ease-in-out;
+}
+.overlay {
+  transition: 5s all ease-in-out;
+}
+
+@media screen and (max-width: 860px) {
+  .navContainer {
+    width: 90%;
+  }
+  .linkWrapper {
+    display: none;
+  }
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .overlay {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.505);
+    /* filter: blur(2rem); */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    box-shadow: 1px 1px 5px 2px rgba(137, 137, 137, 0.121);
+    margin-left: -60%;
+  }
+  .dropdown li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+  }
+
+  .dropdown li a {
+    width: 110px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #204e51;
+    /* background-color: red; */
+    font-family: "Raleway", sans-serif;
+  }
+  .hero-icon svg {
+    width: 24px;
+  }
+  #navLink:hover {
+    background-color: #204e512b;
+  }
+  #navlink a:hover {
+    color: white;
+  }
+  #signLink {
+    /* font-size: 0.8rem;
+      font-weight: 600; */
+    /* width: 130px; */
+    gap: 10px;
+    background-color: #204e51;
+    color: white;
+    justify-content: center;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    transition: 3px all ease-in-out;
+  }
+  #signLink:hover {
+    background-color: #204e512b;
+  }
+  .hero-sign {
+    display: none;
+  }
+}
+
+.pop {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation-name: pop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  /* 100% {
+      transform: scale(1.2);
+    } */
+}
+
+/* Footer */
+/* Footer */
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+.footer-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot-title {
+  width: 60%;
+}
+.foot-title h3 {
+  font-size: 2rem;
+}
+.foot-title p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  padding: 10px 0 20px 0;
+  max-width: 70%;
+}
+
+.footer-links {
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.footer-links a {
+  border: none;
+}
+.fb {
+  width: 40px;
+}
+.ig {
+  width: 22px;
+}
+.tweet {
+  width: 30px;
+}
+
+.foot-pages {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+.foots h4 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.foots ul {
+  list-style: none;
+}
+.foots ul li {
+  height: 40px;
+}
+.foots a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    height: auto;
+    padding: 50px 0;
+  }
+  .footer-container {
+    display: block;
+  }
+  .foot-title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .foot-pages {
+    width: 100%;
+  }
+}.buy-btn {
+  height: -90px;
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: rebeccapurple;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+.buy-btn-container {
+    text-align: center; /* Aligns the button to the center */
+    margin-top: 20px;
+}
+
+
